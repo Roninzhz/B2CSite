@@ -67,15 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddingGoods.aspx" />
     <Content Include="APP_IMG\1.ico" />
     <Content Include="APP_IMG\100.jpg" />
+    <Content Include="APP_IMG\banner1.jpg" />
+    <Content Include="CommunicationCenter.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="APP_JS\jquery.1.4.4.js" />
     <Content Include="APP_IMG\sprite.gif" />
     <Content Include="APP_CSS\style.css" />
+    <Content Include="ModifyInformation.aspx" />
+    <Content Include="ModifyProduct.aspx" />
+    <Content Include="OnlineSurvey.aspx" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="SoppingCart.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddingGoods.aspx.cs">
+      <DependentUpon>AddingGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddingGoods.aspx.designer.cs">
+      <DependentUpon>AddingGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommunicationCenter.aspx.cs">
+      <DependentUpon>CommunicationCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommunicationCenter.aspx.designer.cs">
+      <DependentUpon>CommunicationCenter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -90,10 +113,53 @@
     <Compile Include="B2CSite.Master.designer.cs">
       <DependentUpon>B2CSite.Master</DependentUpon>
     </Compile>
+    <Compile Include="ModifyInformation.aspx.cs">
+      <DependentUpon>ModifyInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyInformation.aspx.designer.cs">
+      <DependentUpon>ModifyInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyProduct.aspx.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyProduct.aspx.designer.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineSurvey.aspx.cs">
+      <DependentUpon>OnlineSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineSurvey.aspx.designer.cs">
+      <DependentUpon>OnlineSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SoppingCart.aspx.cs">
+      <DependentUpon>SoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoppingCart.aspx.designer.cs">
+      <DependentUpon>SoppingCart.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="B2CSite.Master" />
+    <Content Include="Web.sitemap" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

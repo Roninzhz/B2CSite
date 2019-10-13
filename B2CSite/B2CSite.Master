@@ -42,11 +42,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-        <div id="wrap-nav">
+        <div id="banner">
+            <img src="APP_IMG/100.jpg" style="border-radius:50px;position:relative;left:135px;">
+            <img src="APP_IMG/banner1.jpg" style="width:860px;height:115px; position:relative;left:200px;top:5px;"/></div>
+        <div id="wrap-nav" style="position:relative;top:-31px; left: 0px;">
 	<ul class="menu ul">
 		<li><h3 class="selected"><a href="#" class="depth_1">网站首页</a></h3></li>
 		<li>
@@ -111,9 +110,39 @@
 		</li>
 		<li><h3><a href="#" class="depth_1">在线调查</a></h3></li>
 		<li><h3><a href="#" class="depth_1">交流中心</a></h3></li>
-	</ul>
-
-</div>
+        <li><h3><a href="#" class="depth_1">用户登录</a></h3>
+			<ul id="children_04" class="children">
+				<li>
+					<h3 id="menu_04a"><a href="#" class="depth_2"><span class="icon10"></span>用户登录</a></h3>
+					<ul id="children_04a">
+							<li><a href="#" class="depth_3">暂无</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3 id="menu_04b"><a href="#" class="depth_2"><span class="icon10"></span>用户注册</a></h3>
+					<ul id="children_04b">
+							<li><a href="#" class="depth_3">暂无</a></li>
+					</ul>
+				</li>
+			</ul>			
+		</li>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <asp:Menu ID="Menu1" Height="120px" runat="server" BorderColor="#FF3300" DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="24px" Font-Size="12pt"  Font-Names="Verdana">
+        </asp:Menu>
+        <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="10pt" ForeColor="Red" Height="190px" NextPrevFormat="FullMonth" Width="249px">
+            <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+            <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+            <OtherMonthDayStyle ForeColor="#999999" />
+            <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+            <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+            <TodayDayStyle BackColor="#CCCCCC" />
+        </asp:Calendar>
+        <div id="footer" style="position:relative; left:50%;top:40px; font-size:12pt;"><p>CopyRight©2019.張謀謀❤</p></div>
     </form>
 </body>
 </html>
