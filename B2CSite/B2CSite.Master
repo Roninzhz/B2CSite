@@ -147,7 +147,7 @@
             <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
             <TodayDayStyle BackColor="#CCCCCC" />
         </asp:Calendar>
-        <div id="footer" style="position:relative; left:50%;top:40px; font-size:12pt;"><p>CopyRight©2019.張謀謀❤</p></div>
+        <div id="footer" style="position:relative; left:50%;top:40px; font-size:12pt;color:red;"><p>CopyRight©2019.張謀謀❤</p></div>
     </form>
 </body>
 </html>
