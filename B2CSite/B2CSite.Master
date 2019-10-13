@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="B2CSite.master.cs" Inherits="B2CSite.B2CSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>B2CSite</title>
+    <link rel="Shortcut Icon" href="APP_IMG/1.ico" />
+    <link rel="Bookmark" href="APP_IMG/1.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="APP_CSS/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="APP_JS/jquery.1.4.4.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+	    var navstr = '';
+	
+	    for (c in vars = '0'.split(',')) {
+		    $('#menu_' + vars[c]).addClass('selected');
+	    }
+	
+	    $('#wrap-nav ul.menu > li').hover(function() {
+		    $(this).find('.children').show();
+		    if ($(this).find('.children').length) $(this).addClass('hover');
+	    },function() {
+		    $('.children').hide();
+		    $(this).removeClass('hover');
+	    });
+	
+	    $('#wrap-nav ul.menu h3, #wrap-nav ul.menu ul.children > li, #wrap-cats h3').hover(function() {
+		    $(this).addClass('hover');
+	    },function() {
+		    $(this).removeClass('hover');
+	    });
+	
+    });
+   
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="wrap-nav">
+	<ul class="menu ul">
+		<li><h3 class="selected"><a href="#" class="depth_1">网站首页</a></h3></li>
+		<li>
+			<h3 id="menu_01"><a href="#" class="depth_1">会员中心</a></h3>
+			<ul id="children_01" class="children">
+				<li>
+					<h3 id="menu_01a"><a href="#" class="depth_2"><span class="icon10"></span>会员注册</a></h3>
+					<ul id="children_01a">
+						<li><a href="#" class="depth_3">QQ注册</a></li>
+						<li><a href="#" class="depth_3">微信注册</a></li>
+						<li><a href="#" class="depth_3">手机号注册</a></li>
+						<li><a href="#" class="depth_3">邮箱注册</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3 id="menu_01b"><a href="#" class="depth_2"><span class="icon10"></span>修改信息</a></h3>
+					<ul id="children_01b">
+					<li><a href="#" class="depth_3">个人基本信息</a></li>
+					<li><a href="#" class="depth_3">个人账户信息</a></li>
+					<li><a href="#" class="depth_3">销号处理</a></li>
+					</ul>
+				</li>
+			</ul>			
+		</li>
+		
+		<li>
+			<h3 id="menu_02"><a href="#" class="depth_1">商品查询</a></h3>
+			<ul id="children_02" class="children">
+				<li>
+					<h3 id="menu_02a"><a href="#" class="depth_2"><span class="icon10"></span>商品详细</a></h3>
+					<ul id="children_02a">
+						<li><a href="#" class="depth_3">按名称查看</a></li>
+						<li><a href="#" class="depth_3">按货号查看</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3 id="menu_02b"><a href="#" class="depth_2"><span class="icon10"></span>购物车</a></h3>
+					<ul id="children_02b">
+							<li><a href="#" class="depth_3">购物车降价商品</a></li>
+						<li><a href="#" class="depth_3">一键清空购物车</a></li>
+					</ul>
+				</li>
+			</ul>			
+		</li>
+		<li><h3><a href="#" class="depth_1">商品管理</a></h3>
+			<ul id="children_03" class="children">
+				<li>
+					<h3 id="menu_03a"><a href="#" class="depth_2"><span class="icon10"></span>添加商品</a></h3>
+					<ul id="children_03a">
+							<li><a href="#" class="depth_3">按名称添加</a></li>
+							<li><a href="#" class="depth_3">按货号添加</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3 id="menu_03b"><a href="#" class="depth_2"><span class="icon10"></span>修改商品</a></h3>
+					<ul id="children_03b">
+							<li><a href="#" class="depth_3">按名称修改</a></li>
+							<li><a href="#" class="depth_3">按货号修改</a></li>
+					</ul>
+				</li>
+			</ul>			
+		</li>
+		<li><h3><a href="#" class="depth_1">在线调查</a></h3></li>
+		<li><h3><a href="#" class="depth_1">交流中心</a></h3></li>
+	</ul>
+
+</div>
+    </form>
+</body>
+</html>
