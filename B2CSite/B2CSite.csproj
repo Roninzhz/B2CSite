@@ -71,6 +71,10 @@
     <Content Include="APP_IMG\1.ico" />
     <Content Include="APP_IMG\100.jpg" />
     <Content Include="APP_IMG\banner1.jpg" />
+    <Content Include="APP_IMG\head.gif" />
+    <Content Include="APP_IMG\head1.gif" />
+    <Content Include="APP_IMG\head2.gif" />
+    <Content Include="APP_IMG\head3.gif" />
     <Content Include="CommunicationCenter.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="APP_JS\jquery.1.4.4.js" />
