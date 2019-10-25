@@ -8,6 +8,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>B2CSite</title>
+    <script src="https://kit.fontawesome.com/84456bc990.js"></script>
     <link rel="Shortcut Icon" href="APP_IMG/1.ico" />
     <link rel="Bookmark" href="APP_IMG/1.ico" />
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -15,7 +16,6 @@
     <link href="APP_CSS/style.css" rel="stylesheet" />
     <link href="APP_CSS/middle.css" rel="stylesheet" />
     <script type="text/javascript" src="APP_JS/jquery.1.4.4.js"></script>
-    <script src="https://kit.fontawesome.com/84456bc990.js"></script>
     <script type="text/javascript">
 
     $(document).ready(function(){
