@@ -11,79 +11,61 @@ namespace B2CSite
 {
 
 
-    public partial class B2CSite
+    public partial class vote
     {
 
         /// <summary>
-        /// head 控件。
+        /// Label2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// form1 控件。
+        /// lblState 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblState;
 
         /// <summary>
-        /// ContentPlaceHolder1 控件。
+        /// rbtlVote 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtlVote;
 
         /// <summary>
-        /// SiteMapDataSource1 控件。
+        /// btnVote 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource1;
+        protected global::System.Web.UI.WebControls.Button btnVote;
 
         /// <summary>
-        /// Menu1 控件。
+        /// btnView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu Menu1;
+        protected global::System.Web.UI.WebControls.Button btnView;
 
         /// <summary>
-        /// Calendar1 控件。
+        /// lblView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
-
-        /// <summary>
-        /// current 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label current;
-
-        /// <summary>
-        /// onlineNumber1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::CountSiteDemo.onlineNumber onlineNumber1;
+        protected global::System.Web.UI.WebControls.Label lblView;
     }
 }

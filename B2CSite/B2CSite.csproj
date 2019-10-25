@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddingGoods.aspx" />
+    <Content Include="APP_CSS\login.css" />
+    <Content Include="APP_CSS\middle.css" />
+    <Content Include="App_Data\counter.txt" />
     <Content Include="APP_IMG\1.ico" />
     <Content Include="APP_IMG\100.jpg" />
     <Content Include="APP_IMG\banner1.jpg" />
@@ -75,17 +78,24 @@
     <Content Include="APP_IMG\head1.gif" />
     <Content Include="APP_IMG\head2.gif" />
     <Content Include="APP_IMG\head3.gif" />
+    <Content Include="APP_IMG\icon_addmessage.png" />
+    <Content Include="APP_IMG\icon_boss.png" />
+    <Content Include="ChatRoom.aspx" />
     <Content Include="CommunicationCenter.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="APP_JS\jquery.1.4.4.js" />
     <Content Include="APP_IMG\sprite.gif" />
     <Content Include="APP_CSS\style.css" />
+    <Content Include="Global.asax" />
     <Content Include="ModifyInformation.aspx" />
     <Content Include="ModifyProduct.aspx" />
+    <Content Include="onlineNumber.ascx" />
     <Content Include="OnlineSurvey.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="SoppingCart.aspx" />
+    <Content Include="vote.aspx" />
+    <Content Include="vote.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +105,13 @@
     </Compile>
     <Compile Include="AddingGoods.aspx.designer.cs">
       <DependentUpon>AddingGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChatRoom.aspx.cs">
+      <DependentUpon>ChatRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatRoom.aspx.designer.cs">
+      <DependentUpon>ChatRoom.aspx</DependentUpon>
     </Compile>
     <Compile Include="CommunicationCenter.aspx.cs">
       <DependentUpon>CommunicationCenter.aspx</DependentUpon>
@@ -117,6 +134,9 @@
     <Compile Include="B2CSite.Master.designer.cs">
       <DependentUpon>B2CSite.Master</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="ModifyInformation.aspx.cs">
       <DependentUpon>ModifyInformation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -130,6 +150,13 @@
     </Compile>
     <Compile Include="ModifyProduct.aspx.designer.cs">
       <DependentUpon>ModifyProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineNumber.ascx.cs">
+      <DependentUpon>onlineNumber.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onlineNumber.ascx.designer.cs">
+      <DependentUpon>onlineNumber.ascx</DependentUpon>
     </Compile>
     <Compile Include="OnlineSurvey.aspx.cs">
       <DependentUpon>OnlineSurvey.aspx</DependentUpon>
@@ -159,6 +186,13 @@
     </Compile>
     <Compile Include="SoppingCart.aspx.designer.cs">
       <DependentUpon>SoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vote.aspx.cs">
+      <DependentUpon>vote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vote.aspx.designer.cs">
+      <DependentUpon>vote.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

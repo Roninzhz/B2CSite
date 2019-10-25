@@ -13,5 +13,23 @@ namespace B2CSite
         {
 
         }
+
+        protected void submit_Click(object sender, EventArgs e)
+        {
+            string name = txtUName.Text;
+            string pwd = txtUPwd.Text;
+            if (pwd == "admin")
+            {
+                Session["uName"] = name;
+                /*Response.Redirect("ChatRoom.aspx");*/
+                Response.Redirect("Default.aspx");
+            }
+            else
+            {
+                Response.Write("<script>alert('密码不正确')</script>");
+                txtUName.Text = "";
+                txtUPwd.Text = "";
+            }
+        }
     }
 }

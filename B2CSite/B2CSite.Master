@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="B2CSite.master.cs" Inherits="B2CSite.B2CSite" %>
 
+<%@ Register src="onlineNumber.ascx" tagname="onlineNumber" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -11,7 +13,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="APP_CSS/style.css" rel="stylesheet" />
+    <link href="APP_CSS/middle.css" rel="stylesheet" />
     <script type="text/javascript" src="APP_JS/jquery.1.4.4.js"></script>
+    <script src="https://kit.fontawesome.com/84456bc990.js"></script>
     <script type="text/javascript">
 
     $(document).ready(function(){
@@ -34,22 +38,38 @@
 		    $(this).addClass('hover');
 	    },function() {
 		    $(this).removeClass('hover');
-	    });
+        });
+
+        $(".show-btn").click(function () {
+            $(".sm-menu").fadeToggle("fast");
+        });
 	
     });
-   
+       
     </script>
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="banner">
-            <img src="APP_IMG/head.gif" style="position:relative; left:70px; top:-60px;"/>
-            <img src="APP_IMG/head1.gif" style="position:relative; left:0px; top:-60px;"/>
+           <img src="APP_IMG/head.gif" style="position:relative; left:100px; top:30px;"/>
+           <%-- <img src="APP_IMG/head1.gif" style="position:relative; left:0px; top:-60px;"/>
             <img src="APP_IMG/head2.gif" style="position:relative; left:0px; top:-30px;"/>
             <img src="APP_IMG/head3.gif" style="position:relative; left:-70px; top:-30px;"/>
             <img src="APP_IMG/100.jpg" style="border-radius:50px;position:relative;left:0px;">
-            <img src="APP_IMG/banner1.jpg" style="width:860px;height:115px; position:relative;left:60px;top:5px;"/></div>
-        <div id="wrap-nav" style="position:relative;top:-31px; left: 0px;">
+            <img src="APP_IMG/banner1.jpg" style="width:860px;height:115px; position:relative;left:60px;top:5px;"/>--%></div>
+        <div class="middle">
+            <div class="sm-container">
+                <i class="show-btn fas fa-user"></i>
+                <div class="sm-menu">
+                    <a href="SignUp.aspx"><i class="fas fa-street-view"></i></a>
+                    <a href="ChatRoom.aspx"><i class="fas fa-comments"></i></a>
+                    <a href="vote.aspx"><i class="fas fa-vote-yea"></i></a>
+                    <%--<a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>--%>
+            </div>
+        </div>
+        </div>
+        <div id="wrap-nav" style="position:relative; left: 0px;top: -30px";>
 	<ul class="menu ul">
 		<li><h3 class="selected"><a href="#" class="depth_1">网站首页</a></h3></li>
 		<li>
@@ -114,7 +134,7 @@
 		</li>
 		<li><h3><a href="#" class="depth_1">在线调查</a></h3></li>
 		<li><h3><a href="#" class="depth_1">交流中心</a></h3></li>
-        <li><h3><a href="#" class="depth_1">用户登录</a></h3>
+       <%-- <li><h3><a href="#" class="depth_1">用户登录</a></h3>
 			<ul id="children_04" class="children">
 				<li>
 					<h3 id="menu_04a"><a href="#" class="depth_2"><span class="icon10"></span>用户登录</a></h3>
@@ -129,8 +149,12 @@
 					</ul>
 				</li>
 			</ul>			
-		</li>
+		</li>--%>
         </ul>
+        </div>
+         <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         <asp:Menu ID="Menu1" Height="120px" runat="server" BorderColor="#FF3300" DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="24px" Font-Size="12pt"  Font-Names="Verdana">
@@ -143,11 +167,10 @@
             <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
             <TodayDayStyle BackColor="#CCCCCC" />
         </asp:Calendar>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-        <div id="footer" style="position:relative; left:50%;top:40px; font-size:12pt;color:red;"><p>CopyRight©2019.張謀謀❤</p></div>
+       
+        <div id="footer" style="position:relative; left:50%;top:40px; font-size:12pt;"><asp:Label ID="current" runat="server"></asp:Label><p>CopyRight©2019.張謀謀❤</p>
+            <uc1:onlineNumber ID="onlineNumber1" runat="server" />
+            </div>
     </form>
 </body>
 </html>
