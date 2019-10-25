@@ -11,7 +11,7 @@
      <div>
             <table class="auto-style1">
                 <tr>
-                    <td colspan="2">聊天室</td>
+                    <td colspan="2">评论功能</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

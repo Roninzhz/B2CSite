@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="~/Default.aspx" title="返回首页"  description="首页">
+  <siteMapNode url="~/Default.aspx" title="首页"  description="首页">
     <siteMapNode url="#1" title="会员中心"  description="会员" >
       <siteMapNode url="~/SignUp.aspx" title="会员注册" description="注册"></siteMapNode>
       <siteMapNode url="~/ModifyInformation.aspx" title="修改信息" description="修改"></siteMapNode>

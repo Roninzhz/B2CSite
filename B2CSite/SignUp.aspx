@@ -19,7 +19,7 @@
             </div>
 
             <div class="txtb">
-               <%-- <input type="password"/>--%><asp:TextBox ID="txtUPwd" runat="server"></asp:TextBox>
+               <%-- <input type="password"/>--%><asp:TextBox ID="txtUPwd" runat="server" TextMode="Password"></asp:TextBox>
                 <span data-placeholder="Password"></span>
             </div>
 
