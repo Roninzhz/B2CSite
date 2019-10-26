@@ -15,10 +15,12 @@ namespace B2CSite
             {
                 current.Text = "当前用户为：" + Session["uName"].ToString();
             }
-            else
-            {
-                //Response.Redirect("SignUp.aspx");
-            }
+            //cookie
+            //if (Request.Cookies["userinfo"] != null && Request.Cookies["userinfo"]["uName"] != null)
+            //{
+            //    string name = Request.Cookies["userinfo"]["uName"];
+            //    current.Text = "已登录用户为：" + name;
+            //}
         }
     }
 }

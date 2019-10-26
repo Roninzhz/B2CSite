@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web;
 
 namespace B2CSite
 {
@@ -13,14 +14,22 @@ namespace B2CSite
         {
             string name = txtUName.Text;
             string pwd = txtUPwd.Text;
+            //cookie
+            //HttpCookie aCookie = new HttpCookie("userinfo");
+            //aCookie.Values["uName"] = name;
+            //aCookie.Values["pwd"] = pwd;
+            //aCookie.Expires = DateTime.Now.AddDays(1);
+            //Response.Cookies.Add(aCookie);
+            //if(chkState.Checked)
+            //{
+            //    Response.Cookies["userInfo"]["nName"] = name;
+            //    Response.Cookies["userInfo"]["nPwd"] = pwd;
+            //    Response.Cookies["userInfo"].Expires = DateTime.Now.AddDays(14);
+            //}
             if (pwd == "admin")
             {
                 Session["uName"] = name;
                 /*Response.Redirect("ChatRoom.aspx");*/
-                if (chkState.Checked)
-                {
-                    //Session.Timeout = 5;
-                }
                 Response.Redirect("Default.aspx");
             }
             else
