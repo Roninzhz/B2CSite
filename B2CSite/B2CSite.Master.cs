@@ -13,12 +13,11 @@ namespace B2CSite
         {
             if (Session["uName"] != null)
             {
-
                 current.Text = "当前用户为：" + Session["uName"].ToString();
             }
             else
             {
-                Response.Redirect("SignUp.aspx");
+                //Response.Redirect("SignUp.aspx");
             }
         }
     }

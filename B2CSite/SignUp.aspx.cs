@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace B2CSite
 {
@@ -22,6 +17,10 @@ namespace B2CSite
             {
                 Session["uName"] = name;
                 /*Response.Redirect("ChatRoom.aspx");*/
+                if (chkState.Checked)
+                {
+                    //Session.Timeout = 5;
+                }
                 Response.Redirect("Default.aspx");
             }
             else
