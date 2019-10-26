@@ -13,7 +13,6 @@ namespace B2CSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblView.Text = "";
             HttpCookie getCookie = Request.Cookies["Vote"];//读cookie
             if (getCookie == null)
             {
@@ -31,10 +30,6 @@ namespace B2CSite
         protected void GetVote()
         {
             string filepath = Server.MapPath("vote.txt");
-            //if (!File.Exists(Server.MapPath("vote.txt")))
-            //{
-            //    File.CreateText(Server.MapPath("vote.txt"));
-            //}
             StreamReader sr = File.OpenText(filepath);
             while (sr.Peek() != -1)
             {
@@ -49,10 +44,6 @@ namespace B2CSite
         protected void PutVote()
         {
             string filepath = Server.MapPath("vote.txt");
-            //if (!File.Exists(Server.MapPath("vote.txt")))
-            //{
-            //    File.CreateText(Server.MapPath("vote.txt"));
-            //}
             StreamWriter sw = new StreamWriter(filepath, false);
             string str = count[0].ToString();
             for (int i = 1; i < count.Count; i++)
@@ -73,6 +64,7 @@ namespace B2CSite
                 {
                     Response.Write("<script>alert('你已经投过票了，不能重复投票');" +
                         "location='javascript:history.go(-1)'</script>");
+                    return;
                 }
                 else
                 {
@@ -90,11 +82,11 @@ namespace B2CSite
 
         protected void btnView_Click1(object sender, EventArgs e)
         {
-            lblView.Text = "各候选人票数：<br/>";
-            for (int i = 0; i < rbtlVote.Items.Count; i++)
-            {
-                lblView.Text += rbtlVote.Items[i].Value + ":" + count[i] + "票" + "<br/>";
-            }
+            //lblView.Text = "各候选人票数：<br/>";
+            //for (int i = 0; i < rbtlVote.Items.Count; i++)
+            //{
+            //    lblView.Text += rbtlVote.Items[i].Value + ":" + count[i] + "票" + "<br/>";
+            //}
         }
     }
 }
