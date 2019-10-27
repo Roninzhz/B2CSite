@@ -8,8 +8,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div>
-            网站满意度调查</div>
+        <%--<div>
+            网站满意度调查</div>--%>
         <table class="auto-style1">
             <tr>
                 <td>

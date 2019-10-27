@@ -73,6 +73,7 @@
     <Content Include="App_Data\counter.txt" />
     <Content Include="APP_IMG\1.ico" />
     <Content Include="APP_IMG\100.jpg" />
+    <Content Include="APP_IMG\1314.ico" />
     <Content Include="APP_IMG\banner1.jpg" />
     <Content Include="APP_IMG\head.gif" />
     <Content Include="APP_IMG\head1.gif" />
