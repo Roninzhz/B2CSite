@@ -13,11 +13,13 @@ namespace B2CSite
         {
             if (Request.Cookies["userInfo"] != null)
             {
+                //cookie 退出
                 HttpCookie a = Request.Cookies["userInfo"];
                 a.Values.Remove("uName");
                 a.Values.Remove("uPwd");
                 a.Expires = DateTime.Now.AddDays(-1);
                 Response.AppendCookie(a);
+                //session 取消当前会话
                 Session.Abandon();
                 Response.Write("<script>alert('退出成功')</script>");
             }

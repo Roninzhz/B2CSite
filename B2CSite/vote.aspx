@@ -33,8 +33,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="lblView" runat="server"></asp:Label>
-                </td>
+                    &nbsp;</td>
             </tr>
         </table>
 </asp:Content>

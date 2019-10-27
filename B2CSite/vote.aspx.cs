@@ -79,14 +79,5 @@ namespace B2CSite
                 }
             }
         }
-
-        protected void btnView_Click1(object sender, EventArgs e)
-        {
-            //lblView.Text = "各候选人票数：<br/>";
-            //for (int i = 0; i < rbtlVote.Items.Count; i++)
-            //{
-            //    lblView.Text += rbtlVote.Items[i].Value + ":" + count[i] + "票" + "<br/>";
-            //}
-        }
     }
 }

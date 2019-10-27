@@ -11,6 +11,7 @@ namespace B2CSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //session
             //if (Session["uName"] != null)
             //{
             //    current.Text = "当前用户为：" + Session["uName"].ToString();

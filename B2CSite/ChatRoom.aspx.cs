@@ -19,7 +19,8 @@ namespace B2CSite
             }
             else
             {
-                Response.Redirect("SignUp.aspx");
+                //Response.Redirect("SignUp.aspx");
+                Response.Write("<script>alert('请退出，并重新登录')</script>");
             }
         }
 
