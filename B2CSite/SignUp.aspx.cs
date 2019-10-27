@@ -7,7 +7,18 @@ namespace B2CSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string name = "";
+            string pwd = "";
+            if(Response.Cookies["userInfo"]!=null&& Response.Cookies["userInfo"]["uName"]!= null)
+            {
+                name = Response.Cookies["userInfo"]["uName"];
+                pwd = Response.Cookies["userInfo"]["uPwd"];
+                if (name!= null && pwd!= null)
+                {
+                    Response.Redirect("Default.aspx");
+                }
 
+            }
         }
 
         protected void submit_Click(object sender, EventArgs e)
@@ -22,13 +33,18 @@ namespace B2CSite
             //Response.Cookies.Add(aCookie);
             //if(chkState.Checked)
             //{
-            //    Response.Cookies["userInfo"]["nName"] = name;
-            //    Response.Cookies["userInfo"]["nPwd"] = pwd;
+            //    Response.Cookies["userInfo"]["uName"] = name;
+            //    Response.Cookies["userInfo"]["uPwd"] = pwd;
             //    Response.Cookies["userInfo"].Expires = DateTime.Now.AddDays(14);
             //}
             if (pwd == "admin")
-            {
-                Session["uName"] = name;
+            {   Response.Cookies["userInfo"]["uName"] = name;
+                Response.Cookies["userInfo"]["uPwd"] = pwd;
+                if (chkState.Checked)
+                { 
+                    Response.Cookies["userInfo"].Expires = DateTime.Now.AddDays(14);
+                }
+                //Session["uName"] = name;
                 /*Response.Redirect("ChatRoom.aspx");*/
                 Response.Redirect("Default.aspx");
             }
