@@ -25,10 +25,5 @@ namespace B2CSite
                 Response.Write("<script>alert('用户已退出，刷新网页，已继续')</script>");
             }
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-           
-        }
     }
 }

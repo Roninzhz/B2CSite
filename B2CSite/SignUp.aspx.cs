@@ -46,7 +46,7 @@ namespace B2CSite
                 { 
                     Response.Cookies["userInfo"].Expires = DateTime.Now.AddDays(14);
                 }
-                //Session["uName"] = name;
+                Session["uName"] = name;
                 /*Response.Redirect("ChatRoom.aspx");*/
                 Response.Redirect("Default.aspx");
             }
