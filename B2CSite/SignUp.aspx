@@ -24,7 +24,7 @@
             </div>
 
             <%--<input type="submit" class="logbtn" value="Login"/>--%><asp:Button ID="submit" runat="server" Text="submit"  CssClass="logbtn" OnClick="submit_Click"/>
-          <asp:CheckBox ID="chkState" runat="server" Text="一天内不用登录" />
+          <asp:CheckBox ID="chkState" runat="server" Text="两周内不用登录" />
 
 
             &nbsp;<div class="bottom-text">
