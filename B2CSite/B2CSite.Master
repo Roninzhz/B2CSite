@@ -134,7 +134,7 @@
 		</li>
 		<li><h3><a href="#" class="depth_1">在线调查</a></h3></li>
 		<li><h3><a href="#" class="depth_1">交流中心</a></h3></li>
-       <%-- <li><h3><a href="#" class="depth_1">用户登录</a></h3>
+        <li><h3><a href="#" class="depth_1">用户登录</a></h3>
 			<ul id="children_04" class="children">
 				<li>
 					<h3 id="menu_04a"><a href="#" class="depth_2"><span class="icon10"></span>用户登录</a></h3>
@@ -149,7 +149,7 @@
 					</ul>
 				</li>
 			</ul>			
-		</li>--%>
+		</li>
         </ul>
         </div>
          <div>

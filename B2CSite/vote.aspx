@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <%--<div>
             网站满意度调查</div>--%>
-        <table class="auto-style1">
+        <table class="auto-style1" style="position:relative;left:35%; top:50px;">
             <tr>
                 <td>
             <asp:Label ID="Label2" runat="server" Text="注意："></asp:Label>
@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:RadioButtonList ID="rbtlVote" runat="server" AutoPostBack="True" CausesValidation="True" RepeatColumns="2">
+                    <asp:RadioButtonList ID="rbtlVote" runat="server" AutoPostBack="True" CausesValidation="True" RepeatColumns="3">
                         <asp:ListItem>好</asp:ListItem>
                         <asp:ListItem>良</asp:ListItem>
                         <asp:ListItem>差</asp:ListItem>

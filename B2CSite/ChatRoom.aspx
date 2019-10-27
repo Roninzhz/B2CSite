@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div>
+     <div style="position:relative;left:35%; top:30px;">
             <table class="auto-style1">
                 <tr>
                     <td colspan="2">评论功能</td>
