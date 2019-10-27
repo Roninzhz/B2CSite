@@ -18,6 +18,7 @@ namespace B2CSite
                 a.Values.Remove("uPwd");
                 a.Expires = DateTime.Now.AddDays(-1);
                 Response.AppendCookie(a);
+                Session.Abandon();
                 Response.Write("<script>alert('退出成功')</script>");
             }
             else
