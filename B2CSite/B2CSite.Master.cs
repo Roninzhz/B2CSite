@@ -16,10 +16,14 @@ namespace B2CSite
             //    current.Text = "当前用户为：" + Session["uName"].ToString();
             //}
             //cookie
-            if (Request.Cookies["userinfo"]!= null && Request.Cookies["userinfo"]["uName"]!= null)
+            if (Request.Cookies["userInfo"]!= null && Request.Cookies["userInfo"]["uName"]!= null)
             {
-                string name = Request.Cookies["userinfo"]["uName"];
+                string name = Request.Cookies["userInfo"]["uName"];
                 current.Text = "已登录用户为：" + name;
+            }
+            else
+            {
+                current.Text = " ";
             }
         }
     }

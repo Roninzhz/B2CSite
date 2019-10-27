@@ -7,13 +7,15 @@ namespace B2CSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string name = "";
-            string pwd = "";
-            if(Response.Cookies["userInfo"]!=null&& Response.Cookies["userInfo"]["uName"]!= null)
+            
+
+            if (Request.Cookies["userInfo"] != null && Request.Cookies["userInfo"]["uName"] != null)
             {
-                name = Response.Cookies["userInfo"]["uName"];
-                pwd = Response.Cookies["userInfo"]["uPwd"];
-                if (name!= null && pwd!= null)
+                string name = Request.Cookies["userInfo"]["uName"];
+                string pwd = Request.Cookies["userInfo"]["uPwd"];
+                //Response.Write("<script>alert(name)</script>");
+
+                if (name != null && pwd != null)
                 {
                     Response.Redirect("Default.aspx");
                 }

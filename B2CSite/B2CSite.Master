@@ -64,8 +64,8 @@
                     <a href="SignUp.aspx"><i class="fas fa-street-view"></i></a>
                     <a href="ChatRoom.aspx"><i class="fas fa-comments"></i></a>
                     <a href="vote.aspx"><i class="fas fa-vote-yea"></i></a>
-                    <%--<a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>--%>
+                    <a href="delect.aspx"><i class="fas fa-user-slash"></i></a>
+                    <%--<a href="#"><i class="fab fa-whatsapp"></i></a>--%>
             </div>
         </div>
         </div>
