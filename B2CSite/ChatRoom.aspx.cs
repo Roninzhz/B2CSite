@@ -20,7 +20,7 @@ namespace B2CSite
             else
             {
                 //Response.Redirect("SignUp.aspx");
-                Response.Write("<script>alert('请退出，并重新登录')</script>");
+               Response.Write("<script>alert('请退出，并重新登录')</script>");
             }
         }
 
@@ -41,6 +41,7 @@ namespace B2CSite
             Application.UnLock();
             txtChat.Text = "";
             txtChatRoom.Text = Application["chat"].ToString();
+            Response.Write("<script>alert('评论成功，请返回首页')</script>");
         }
     }
 }
