@@ -33,6 +33,15 @@ namespace B2CSite
         protected global::System.Web.UI.WebControls.TextBox txtUName;
 
         /// <summary>
+        /// reqtxtName 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqtxtName;
+
+        /// <summary>
         /// txtUPwd 控件。
         /// </summary>
         /// <remarks>
@@ -40,6 +49,24 @@ namespace B2CSite
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUPwd;
+
+        /// <summary>
+        /// reqtxtPwd 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqtxtPwd;
+
+        /// <summary>
+        /// Vs 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary Vs;
 
         /// <summary>
         /// submit 控件。

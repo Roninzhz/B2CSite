@@ -7,7 +7,7 @@ namespace B2CSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (Request.Cookies["userInfo"] != null && Request.Cookies["userInfo"]["uName"] != null)
             {
                 string name = Request.Cookies["userInfo"]["uName"];
@@ -36,7 +36,7 @@ namespace B2CSite
             }
             else
             {
-                Response.Write("<script>alert('密码不正确')</script>");
+                //Response.Write("<script>alert('密码不正确')</script>");
                 txtUName.Text = "";
                 txtUPwd.Text = "";
             }
