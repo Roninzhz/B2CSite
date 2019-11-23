@@ -35,7 +35,7 @@
             &nbsp;<div class="bottom-text">
                 Don't have account?<a href="#">Sign up</a>
             </div>
-       <%-- <script type="text/javascript">
+        <script type="text/javascript">
         $(".txtb input").on("focus",function(){
             $(this).addClass("focus");
         });
@@ -44,7 +44,7 @@
             if($(this).val=="")
             $(this).removeClass("focus");
         });
-        </script>--%>
+        </script>
     </form>
 </body>
 </html>
